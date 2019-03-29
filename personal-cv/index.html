@@ -9,9 +9,10 @@
         <link rel="stylesheet" href="bootstrap.css">
         <body class="container">
 
-            <header class="row mx-0 flex-column flex-md-row" id="row1">
-                <h1 class="">Katja Stadel</h1>
+            <header class="row mx-0 mb-2 flex-column flex-md-row" id="row1">
+                <h1 class="ml-2 mt-4">Katja Stadel</h1>
                 <div id="kontbio" class="col-md d-flex justify-content-md-end
+                    align-items-end
                     bg-danger">
                     <a class="mb-2" href="#kont"
                         id="kontakt">Kontakt</a>
@@ -21,10 +22,9 @@
                 </div>
             </header>
 
-            <div class="row col-sm mx-0 bg-warning" id="row2">
-                <div>
-                    <img style="width: 13rem;" class="mb-4
-                        rounded"
+            <div class="row col-sm mx-0 mb-4 bg-warning" id="row2">
+                <div class="bg-dark p-1">
+                    <img style="width: 13rem;" class="rounded"
                         src="bewfoto.jpg"
                         alt="profilbild">
                 </div>
@@ -50,22 +50,10 @@
                     </ul>
 
 
-                    <!--
-                    <div class="mb-4">
-                        <button class="mr-1 btn btn-success">R/R-Shiny</button>
-                        <button class="mr-1 btn btn-success">Html5</button>
-                        <button class="mr-1 btn btn-success">Bootstrap</button>
-                        <button class="mr-1 btn btn-success">LaTex</button>
-                        <button class="mr-1 btn btn-success">JavaScript</button>
-                        <button class="mr-1 btn btn-success">Spss</button>
-                        <button class="mr-1 btn btn-success">Excel</button>
-                    </div>
--->
-
                 </section>
             </div>
 
-            <div class="row col-sm bg-danger mx-0" id="row3">
+            <div class="row col-sm mb-4 bg-danger mx-0" id="row3">
                 <section class="col-md-6">
                     <h3>About Me:</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -75,11 +63,18 @@
                 </section>
                 <section class="col-md-6">
                     <h3>Hobbies:</h3>
-                    <div class="mb-4">
-                        <button class="mr-1 btn btn-primary">Harfe</button>
-                        <button class="mr-1 btn btn-primary">Malerei</button>
-                        <button class="mr-1 btn btn-primary">Social</button>
-                    </div>
+
+
+
+                    <ul class="list-inline">
+                        <li class="bg-dark mb-1 text-light
+                            img-thumbnail mb-1 list-inline-item">Harfe</li>
+                        <li class="bg-dark text-light
+                            img-thumbnail mb-1 list-inline-item">Malerei</li>
+                        <li class="bg-dark text-light
+                            img-thumbnail mb-1 list-inline-item">Social</li>
+                    </ul>
+
                 </section>
             </div>
 
@@ -97,7 +92,8 @@
                 </section>
             </div>
 
-            <div class="row col-sm bg-danger d-flex justify-content-around mx-0"
+            <div class="row mb-4 col-sm bg-danger d-flex justify-content-around
+                mx-0"
                 id="row5">
                 <div class="card mb-2" style="width: 18rem;">
                     <img class="card-img-top"
