@@ -6,19 +6,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
+
         <link rel="stylesheet" href="bootstrap.css">
-        <body class="container">
+        <body class="container text-monospace">
 
             <header class="row col-sm mb-4 bg-dark rounded text-light mx-0"
                 id="row1">
-                <h1 class="ml-2 mt-4 text-light"> <strong>Katja</strong>
-                    Stadel</h1>
+                <h1 class="ml-2 mt-4 text-light font-weight-light
+                    text-monospace"> <span class="font-weight-bold">Katja</span>
+                    <span class="font-weight-lighter">Stadel</span></h1>
                 <div id="kontbio" class="col-md d-flex
                     justify-content-md-end
                     align-items-end">
-                    <a class="mb-2 text-light shadow" href="#kont"
-                        id="kontakt"> <strong> KONTAKT</strong> </a>
-                    <a class="mb-2 ml-2 text-light shadow"
+                    <a class="mb-2 border-left text-light shadow
+                        font-weight-bold"
+                        href="#kont"
+                        id="kontakt"><span class="ml-1"></span> KONTAKT</a>
+                    <a class="mb-2 ml-2 text-light
+                        shadow"
                         href="#bio"
                         id="biografie">BIOGRAFIE</a>
                 </div>
@@ -144,7 +149,7 @@
                         anzuwenden.
                     </p>
                 </section>
-                <section class="col-md-9 bg-light rounded shadow"
+                <section class="col-md-9 p-2 bg-light rounded shadow"
                     id="bio">
                     <h3>Biografie:</h3>
                     <table class="table">
@@ -207,18 +212,25 @@
             </div>
 
             <footer class="row">
-                <section class="col">
-                    <h3>Softskills:</h3>
-                    <p class="mr-2 text-muted">
-                        Begeisterungsfähig
-                        Autodidakt (learning on the fly)
-                        analytische Vorgehensweise
-                        logisches Denken
-                        kreativ
-                        kommunikativ
-                        Ergebnisorientiert
+                <section class="col d-flex mr-2 mb-4 border-bottom border-top
+                    align-content-start">
+                    <h3 class="mt-2">Softskills:</h3>
+                    <button class="btn btn-secondary my-2 disabled bx-2">&#9654</button>
+                    <p class="mx-2 my-2 text-muted">
+                        Begeisterungs<span>&shy</span>fähig &middot
+                        Autodi<span>&shy</span>dakt (learning <span>&shy</span>on
+                        the fly)
+                        &middot
+                        analytische Vorgehensweise &middot
+                        logisches Denken &middot
+                        kreativ &middot
+                        kommunikativ &middot
+                        Teamgeist &middot
+                        Ergebnisorien<span>&shy</span>tiert
                     </p>
                 </section>
+
+
 
 
             </footer>
