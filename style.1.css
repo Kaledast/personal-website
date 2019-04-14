@@ -1,61 +1,69 @@
 body {
   display: grid;
+  grid-template-rows: 60px auto 60px;
   grid-row-gap: 4px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   background-color: papayawhip;
   height: 100vh;
-  justify-items: center;
-  padding: 5px;
+  padding: 0 30px 0 30px;
 }
 
 header {
-  display: grid;
-  grid-column: span 3;
-  grid-template-columns: 1fr 1fr 1fr;
-  background: purple;
+  display: flex;
   justify-content: space-between;
-}
-
-header > nav {
-  display: grid;
-  background: green;
-  grid-column: 3;
-  justify-items: end;
+  align-items: center;
+  background: purple;
 }
 
 .Row2 {
-  display: grid;
-  grid-column: span 3;
-
+  display: flex;
+  justify-content: space-between;
   background: pink;
+  align-items: center;
+}
+
+.Row2 > img {
+  width: 170px;
+  height: 190px;
+}
+
+.Row2 > .Row2-List {
+  align-self: top;
+  margin-top: 0;
 }
 
 .Row3 {
-  display: grid;
+  display: flex;
   background: red;
-  grid-column: span 3;
+  align-content: center;
 }
 
 .Row4 {
-  display: grid;
+  background: chartreuse;
+}
+
+.Row4 > p {
+  display: inline-block;
   background: cyan;
-  grid-column: span 3;
 }
 
 .Row5 {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4px;
   background: coral;
-  grid-column: span 3;
+}
+
+.Row5 img {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 400px;
 }
 
 .Row6 {
-  display: grid;
   background: green;
-  grid-column: span 3;
 }
 
 footer {
   background: white;
-  grid-column: span 3;
 }
