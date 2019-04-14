@@ -1,0 +1,12 @@
+body {
+  display: grid;
+  grid-column: 1fr 1fr;
+  grid-row: 1fr 1fr 1fr;
+  background-color: red;
+  height: 100vh;
+  align-content: center;
+}
+
+.h1 {
+  color: blue;
+}
